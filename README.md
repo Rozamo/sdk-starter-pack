@@ -8,8 +8,8 @@
 
 ### Non Functional Requirements
 - [x] Changeset
-- [ ] Husky
-- [ ] Codeowners
+- [x] Husky
+- [x] Codeowners
 - [ ] Tests
 - [ ] DangerJs
 - [ ] GitHub actions - changeset, dangerjs, build, tsc, validate, tests
