@@ -1,5 +1,5 @@
 const sample = () => {
-  return "Samples";
+  return "Sampless";
 };
 
 export { sample };
