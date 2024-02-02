@@ -8,8 +8,8 @@
 
 ### Non Functional Requirements
 - [x] Changeset
-- [ ] Husky
-- [ ] Codeowners
+- [x] Husky
+- [x] Codeowners
 - [ ] Tests
 - [ ] DangerJs
 - [ ] GitHub actions - changeset, dangerjs, build, tsc, validate, tests
@@ -18,3 +18,4 @@
 ### Resources
 - https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma
 - https://vitejs.dev/guide/build#library-mode
+- https://medium.com/@imdavidrock/why-should-you-use-commitizen-husky-for-conventional-commit-and-have-unified-lint-41047aad6d
