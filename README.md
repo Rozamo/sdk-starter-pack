@@ -7,7 +7,7 @@
 - [ ] separated chunks
 
 ### Non Functional Requirements
-- [ ] Changeset
+- [x] Changeset
 - [ ] Husky
 - [ ] Codeowners
 - [ ] Tests
