@@ -7,23 +7,20 @@
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
+  "main": "./dist/sample.umd.cjs",
+  "module": "./dist/sample.js",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
+    "import": "./dist/sample.js",
+    "require": "./dist/sample.umd.cjs"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "prepare": "husky",
     "test": "echo \"TBA\" && exit 0",
-    "postinstall": "husky",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
-    "cz": "cz"
+    "postinstall": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -41,11 +38,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   }
 }
