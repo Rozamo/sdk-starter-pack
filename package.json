@@ -20,6 +20,7 @@
     "build": "tsc && vite build"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
