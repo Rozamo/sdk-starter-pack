@@ -22,7 +22,8 @@
     "test": "echo \"TBA\" && exit 0",
     "postinstall": "husky",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "cz": "cz"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
