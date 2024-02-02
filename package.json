@@ -19,7 +19,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "prepare": "husky",
-    "test": "echo \"TBA\" && exit 0"
+    "test": "echo \"TBA\" && exit 0",
+    "postinstall": "husky",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -37,6 +40,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   }
 }
