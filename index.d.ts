@@ -1,1 +1,3 @@
-export function setupCounter(element: HTMLButtonElement): void
+declare const sample: () => void;
+
+export { sample };
