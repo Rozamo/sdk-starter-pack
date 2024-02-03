@@ -13,7 +13,7 @@
 - [x] Codeowners
 - [x] Tests
 - [x] Linting
-- [ ] Prettier
+- [x] Prettier
 - [ ] DangerJs
   - [ ] Checks if changeset is present
 - [ ] GitHub actions
