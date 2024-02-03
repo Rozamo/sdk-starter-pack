@@ -1,6 +1,10 @@
 node_modules
+.husky
 
 *.html
 .eslintignore
 .prettierignore
 *.lock
+LICENSE
+.gitignore
+.github/CODEOWNERS

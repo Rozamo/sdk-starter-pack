@@ -3,5 +3,7 @@ dist
 
 .eslintrc.cjs
 .prettierignore
+LICENSE
 *.lock
 *.md
+*.html
