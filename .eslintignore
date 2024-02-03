@@ -3,4 +3,5 @@ dist
 
 .eslintrc.cjs
 .prettierignore
+*.lock
 *.md

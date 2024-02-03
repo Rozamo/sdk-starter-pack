@@ -1,0 +1,29 @@
+name: Danger JS
+
+on:
+  pull_request:
+    branches: [main]
+    types: [labeled, unlabeled, synchronize, opened]
+
+jobs:
+  build:
+    name: Danger JS
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.10.0"
+      - name: Install yarn
+        run: npm install -g yarn
+      - name: Setup Cache and Install Dependencies
+        uses: bahmutov/npm-install@v1.8.38
+      - name: Run DangerJS
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
