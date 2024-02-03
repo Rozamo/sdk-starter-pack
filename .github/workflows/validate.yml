@@ -1,10 +1,10 @@
-name: Build
+name: Validate
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
-    name: Build
+    name: Build, Test and Validate
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -22,3 +22,7 @@ jobs:
         uses: bahmutov/npm-install@v1.8.38
       - name: Compile and Build
         run: yarn build
+      - name: Run Tests
+        run: yarn test
+      - name: Validate
+        run: yarn lint

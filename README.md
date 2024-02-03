@@ -18,9 +18,9 @@
 - [x] Prettier
 - [ ] GitHub actions
   - [x] build
-  - [ ] validate
-    - [ ] lint
-  - [ ] tests
+  - [x] validate
+    - [x] lint
+  - [x] tests
   - [ ] dangerjs
     - [ ] Checks if changeset is present
   - [ ] changeset
