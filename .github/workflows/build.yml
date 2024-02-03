@@ -1,6 +1,6 @@
 name: Build
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
@@ -20,5 +20,5 @@ jobs:
         run: npm install -g yarn
       - name: Setup Cache and Install Dependencies
         uses: bahmutov/npm-install@v1.8.38
-      - name: Build
+      - name: Compile and Build
         run: yarn build

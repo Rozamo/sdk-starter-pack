@@ -1,6 +1,5 @@
-// import { sample } from "../main";
+import { sample } from "../main";
 
 test("Returns sample", () => {
-  // expect(sample()).toBe("Sample");
-  expect(1).toBe(1);
+  expect(sample()).toBe("Sample");
 });
