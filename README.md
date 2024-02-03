@@ -6,7 +6,6 @@
 
 - [x] ES and CJS modules
 - [ ] separated chunks
-- [ ] Support for old browsers and node (make a list)
 
 ### Non Functional Requirements
 
