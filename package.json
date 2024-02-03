@@ -22,8 +22,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "postinstall": "husky",
-    "lint": "eslint lib src --fix",
-    "prettier": "prettier lib src --write"
+    "lint": "eslint . --fix",
+    "prettier": "prettier . --write"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -52,11 +52,7 @@
     }
   },
   "lint-staged": {
-    "lib/**/*": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "src/**/*": [
+    "*": [
       "eslint --fix",
       "prettier --write"
     ]
