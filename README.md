@@ -17,9 +17,8 @@
 - [x] Linting
 - [x] Prettier
 - [ ] GitHub actions
-  - [ ] build
+  - [x] build
   - [ ] validate
-    - [ ] tsc
     - [ ] lint
   - [ ] tests
   - [ ] dangerjs
