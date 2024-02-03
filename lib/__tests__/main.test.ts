@@ -1,4 +1,3 @@
-import { expect, test } from "vitest";
 import { sample } from "../main";
 
 test("Returns sample", () => {
