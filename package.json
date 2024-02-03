@@ -17,7 +17,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "tsc": "tsc",
     "prepare": "husky",
     "test": "vitest run",
     "test:watch": "vitest",

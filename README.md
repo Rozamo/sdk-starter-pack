@@ -16,15 +16,16 @@
 - [x] Tests
 - [x] Linting
 - [x] Prettier
-- [ ] DangerJs
-  - [ ] Checks if changeset is present
 - [ ] GitHub actions
-  - [ ] changeset
-  - [ ] dangerjs
   - [ ] build
-  - [ ] tsc
   - [ ] validate
+    - [ ] tsc
+    - [ ] lint
   - [ ] tests
+  - [ ] dangerjs
+    - [ ] Checks if changeset is present
+  - [ ] changeset
+    - [ ] publish on mater merge (fork a repo for it)
 
 ### Resources
 
