@@ -5,16 +5,17 @@
 ### Functional Requirements
 - [x] ES and CJS modules
 - [ ] separated chunks
-= [ ] Support for old browsers and node (make a list)
+- [ ] Support for old browsers and node (make a list)
 
 ### Non Functional Requirements
 - [x] Changeset
 - [x] Husky
 - [x] Codeowners
 - [x] Tests
+- [x] Linting
+- [ ] Prettier
 - [ ] DangerJs
   - [ ] Checks if changeset is present
-- [ ] Linting
 - [ ] GitHub actions
   - [ ] changeset
   - [ ] dangerjs
