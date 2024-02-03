@@ -21,8 +21,8 @@
   - [x] validate
     - [x] lint
   - [x] tests
-  - [ ] dangerjs
-    - [ ] Checks if changeset is present
+  - [x] dangerjs
+    - [x] Checks if changeset is present
   - [ ] changeset
     - [ ] publish on mater merge (fork a repo for it)
 
