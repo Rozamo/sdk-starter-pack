@@ -5,15 +5,23 @@
 ### Functional Requirements
 - [x] ES and CJS modules
 - [ ] separated chunks
+= [ ] Support for old browsers and node (make a list)
 
 ### Non Functional Requirements
 - [x] Changeset
 - [x] Husky
 - [x] Codeowners
-- [ ] Tests
+- [x] Tests
 - [ ] DangerJs
-- [ ] GitHub actions - changeset, dangerjs, build, tsc, validate, tests
+  - [ ] Checks if changeset is present
 - [ ] Linting
+- [ ] GitHub actions
+  - [ ] changeset
+  - [ ] dangerjs
+  - [ ] build
+  - [ ] tsc
+  - [ ] validate
+  - [ ] tests
 
 ### Resources
 - https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma
