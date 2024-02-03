@@ -3,8 +3,7 @@ name: Danger JS
 on:
   pull_request:
     branches: [main]
-  label:
-    types: [created, edited, deleted]
+    types: [labeled, unlabeled]
 
 jobs:
   build:
