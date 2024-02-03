@@ -1,4 +1,4 @@
-name: Build, Test and Validate
+name: Validate
 
 on: [pull_request]
 
