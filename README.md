@@ -12,7 +12,8 @@
 - [x] Husky
 - [x] Codeowners
 - [x] Tests
-- [ ] Linting + Prettier
+- [x] Linting
+- [ ] Prettier
 - [ ] DangerJs
   - [ ] Checks if changeset is present
 - [ ] GitHub actions
