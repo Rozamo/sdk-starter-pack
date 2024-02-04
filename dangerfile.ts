@@ -9,7 +9,5 @@ const hasSkipChangesetLabel = danger.github.issue.labels.find(
 );
 
 if (!hasChangelog && !hasSkipChangesetLabel) {
-  fail(
-    "Please add a changeset entry for your changes.\n Check: https://github.com/changesets/changesets/blob/main/docs/adding-a-changeset.md#i-am-in-a-single-package-repository for info on how to add changeset",
-  );
+  fail("Please add a changeset entry for your changes.");
 }

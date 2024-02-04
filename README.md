@@ -6,6 +6,7 @@
 
 - [x] ES and CJS modules
 - [ ] separated chunks
+- [ ] joined ts files from separate ones
 
 ### Non Functional Requirements
 
@@ -22,8 +23,10 @@
   - [x] tests
   - [x] dangerjs
     - [x] Checks if changeset is present
-  - [ ] changeset
-    - [ ] publish on mater merge (fork a repo for it)
+  - [x] changeset
+    - [x] publish on mater merge (fork a repo for it)
+  - [ ] Tests benchmark in pr
+  - [ ] separate build for src and lib files
 
 ### Resources
 

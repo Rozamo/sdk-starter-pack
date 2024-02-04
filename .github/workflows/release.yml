@@ -1,17 +1,18 @@
-name: Danger JS
+name: Release
 
 on:
-  pull_request:
-    branches: [main]
-    types: [labeled, unlabeled, synchronize, opened]
+  push:
+    branches:
+      - main
+
+env:
+  HUSKY: 0
 
 jobs:
-  build:
-    name: Danger JS
+  release:
+    name: Release
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
+    concurrency: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v3
@@ -27,7 +28,11 @@ jobs:
       - name: Setup Cache and Install Dependencies
         uses: bahmutov/npm-install@v1.8.38
 
-      - name: Run DangerJS
-        run: yarn danger ci
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1.4.5
+        with:
+          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.CI_NPM_PUBLISH_TOKEN }}

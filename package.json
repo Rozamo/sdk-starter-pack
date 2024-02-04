@@ -1,6 +1,6 @@
 {
   "name": "sdk-starter-pack",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "files": [
@@ -19,10 +19,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "prepare": "husky",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "vitest run --pass-with-no-tests",
+    "test:watch": "vitest --pass-with-no-tests",
     "postinstall": "husky",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "yarn build && changeset publish",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -39,6 +42,7 @@
     "eslint-define-config": "^2.1.0",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.1",
+    "pinst": "^3.0.0",
     "prettier": "^3.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
