@@ -6,7 +6,6 @@
 
 - [x] ES and CJS modules
 - [x] Tree shakeable
-- [ ] separated chunk files. Basically if there is sample1.ts and sample2.ts and both are exporting sample1 and sample2 respectively. Then there should be an index.js which exports both, sample1.js and sample2.js which export their own code. This will allow imports like import {sample1} from 'app' and import {sample1} from 'app/sample1'. Also check if tree shakeableity remains with it.
 - [x] joined ts files from separate ones. Each file should create a separate .d.ts file and all those should converge to a single index.d.ts file. For example there should be a sample1.d.ts, sample2.d.ts and an index.d.ts. index.d.ts exports the types of sample1.d.ts and sample2.d.ts
 
 ### Non Functional Requirements
@@ -17,7 +16,7 @@
 - [x] Tests
 - [x] Linting
 - [x] Prettier
-- [ ] GitHub actions
+- [x] GitHub actions
   - [x] build
   - [x] validate
     - [x] lint
@@ -26,9 +25,8 @@
     - [x] Checks if changeset is present
   - [x] changeset
     - [x] publish on mater merge (fork a repo for it)
-  - [ ] Tests benchmark in pr
-  - [ ] separate build for src and lib files - to avoid commit block when there is an error in src folder
-  - [ ] Reduce yarn install time in ci by removing unnecessary deps such as react etc
+- [x] separate build for src and lib files - to avoid commit block when there is an error in src folder
+- [ ] Reduce yarn install time in ci by removing unnecessary deps such as react etc
 
 ### Steps to make the template work
 
