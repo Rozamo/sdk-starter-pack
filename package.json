@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
   "main": "./dist/sample.umd.cjs",
   "module": "./dist/sample.js",
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./dist/index.d.ts",
     "import": "./dist/sample.js",
     "require": "./dist/sample.umd.cjs"
   },
@@ -48,6 +47,7 @@
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.2",
     "vitest": "^1.2.2"
   },
   "config": {
@@ -60,5 +60,14 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "keywords": [
+    "sdk",
+    "starter",
+    "pack",
+    "vite",
+    "template",
+    "typescript",
+    "react"
+  ]
 }
