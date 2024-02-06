@@ -1,32 +1,20 @@
-# sdk-starter-pack [WIP]
+# sdk-starter-pack
 
 ## Template to start an SDK project
 
-### Functional Requirements
+Clone the project and re-initialise git to start.\
+Cli to automate the above is WIP.
 
-- [x] ES and CJS modules
-- [x] Tree shakeable
-- [x] joined ts files from separate ones. Each file should create a separate .d.ts file and all those should converge to a single index.d.ts file. For example there should be a sample1.d.ts, sample2.d.ts and an index.d.ts. index.d.ts exports the types of sample1.d.ts and sample2.d.ts
+## Features
 
-### Non Functional Requirements
-
-- [x] Changeset
-- [x] Husky
-- [x] Codeowners
-- [x] Tests
-- [x] Linting
-- [x] Prettier
-- [x] GitHub actions
-  - [x] build
-  - [x] validate
-    - [x] lint
-  - [x] tests
-  - [x] dangerjs
-    - [x] Checks if changeset is present
-  - [x] changeset
-    - [x] publish on mater merge (fork a repo for it)
-- [x] separate build for src and lib files - to avoid commit block when there is an error in src folder
-- [ ] Reduce yarn install time in ci by removing unnecessary deps such as react etc
+- ES and CJS modules
+- Tree shakeable
+- Separated type files for ease of consumer use
+- Changeset for versioning and publishing
+- Husky and lint staged for validating commits
+- Unit test support
+- Linting and formatting support
+- GitHub Actions for build, test, validate, changeset versioning and publishing
 
 ### Steps to make the template work
 
