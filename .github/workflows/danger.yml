@@ -26,6 +26,8 @@ jobs:
 
       - name: Setup Cache and Install Dependencies
         uses: bahmutov/npm-install@v1.8.38
+        with:
+          install-command: yarn install --frozen-lockfile --ignore-optional
 
       - name: Run DangerJS
         run: yarn danger ci
